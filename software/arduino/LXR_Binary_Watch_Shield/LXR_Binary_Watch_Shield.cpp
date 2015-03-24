@@ -121,16 +121,6 @@ void set_digit(E_DIGIT_SELECT const digit, uint8_t const val)
 	DIGIT_2_PORT &= ~DIGIT_2_bm;
 	DIGIT_3_PORT &= ~DIGIT_3_bm;
 	
-	// switch the selected digit on
-	switch(digit)
-	{
-		case DIGIT0: DIGIT_0_PORT |= DIGIT_0_bm; break;		
-		case DIGIT1: DIGIT_1_PORT |= DIGIT_1_bm; break;
-		case DIGIT2: DIGIT_2_PORT |= DIGIT_2_bm; break;
-		case DIGIT3: DIGIT_3_PORT |= DIGIT_3_bm; break;
-		default: break;
-	}
-	
 	// display value on the bit lines
 	uint8_t tmp = val;
 	if(tmp % 2) BIT_0_PORT &= ~BIT_0_bm;
@@ -144,6 +134,16 @@ void set_digit(E_DIGIT_SELECT const digit, uint8_t const val)
 	tmp /= 2;
 	if(tmp % 2) BIT_3_PORT &= ~BIT_3_bm;
 	else BIT_3_PORT |= BIT_3_bm;
+	
+	// switch the selected digit on
+	switch(digit)
+	{
+		case DIGIT0: DIGIT_0_PORT |= DIGIT_0_bm; break;		
+		case DIGIT1: DIGIT_1_PORT |= DIGIT_1_bm; break;
+		case DIGIT2: DIGIT_2_PORT |= DIGIT_2_bm; break;
+		case DIGIT3: DIGIT_3_PORT |= DIGIT_3_bm; break;
+		default: break;
+	}
 }
 
 /** 
