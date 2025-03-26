@@ -18,6 +18,4 @@ There are only 10 types of people in the world: those who understand binary, and
 * I2C-Real Time Clock  (RTC) for the watch functionality
 * Arduino Library available for control with binary clock example programms
 
-# 🎥 Video
-
-[![VIDEO1](http://img.youtube.com/vi/_8ahgDAzyN0/0.jpg)](https://www.youtube.com/watch?v=_8ahgDAzyN0 "LXRobotics Binary Watch Shield")
+# 🎥 [Video](images/binary_watch_shield_demo.mp4)
