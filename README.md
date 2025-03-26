@@ -6,7 +6,7 @@
 
 # 📸 Image
 
-![LXRobotics P15 BinaryWatchShield](https://raw.githubusercontent.com/lxrobotics/BinaryWatchShield/master/images/binary-watch-shield-side-small.JPG)
+![LXRobotics P15 BinaryWatchShield](images/binary-watch-shield-side-small.JPG)
 
 # 📂 Description
 
